@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+  <div class="media">
+    <img class="rounded-circle account-img m-auto" src="{{ url_for('static',filename='profile_pic/'+user.image_file)}}">
+</div>
+<div class="content-section mt-4 pl-5">
+  <h2 class="account-heading border-bottom">{{ user.username }}</h2>
+        <p class="text-secondary">Name:  {{ user.username }}</p>
+      <p class="text-secondary">Email: {{ user.email }}</p>
+      <p class="text-secondary">User Role: {{ user.user_role }}</p>
+      <p class="text-secondary">User Posts: {{ count }}</p>
+
+</div>
+{%if title == "Account"%}
+    <div class="text-right">
+        <a href="{{url_for('users.account')}}" class="btn btn-outline-primary">Edit Details</a>
+    </div>
+{%endif%}
+</div>
+{% endblock content %}

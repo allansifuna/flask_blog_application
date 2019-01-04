@@ -1,0 +1,41 @@
+{% extends "admin.html"%}
+{%block users%}
+<div class="content-section">
+        <h2 class="lead text-right">Adminstrator:{{current_user.username}}</h2>
+    </div>
+
+        <div class="row">
+        <div class="col-md-12 col-sm-12 mr-0 mt-0">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+              <thead class="bg-steel">
+                <tr>
+                    <th scope="col" >Comment_Id</th>
+                    <th scope="col">Post_Title</th>
+                    <th scope="col">Comment_Author</th>
+                    <th scope="col">Content</th>
+                </tr>
+            </thead>
+            {%for comment in comments%}
+                <tbody>
+                <tr>
+                    <td>{{comment.id}}</td>
+                    <td><a class="mr-2" href="{{url_for('posts.post',post_id=comment.comment.id)}}">{{ comment.comment.title }}</a></td>
+                    <td><a class="mr-2" href="{{ url_for('users.accountDetails',username=comment.comment_author.username)}}">
+                    {{comment.comment_author.username}}</a></td>
+                    <td>{{comment.content}}
+                  </td>
+                </tr>
+          </tbody>
+            {%endfor%}
+          <tr>
+        </table>
+    </div>
+</div>
+
+
+</div>
+{% endblock users%}
+
+
+

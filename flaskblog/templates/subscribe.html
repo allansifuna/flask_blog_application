@@ -1,0 +1,25 @@
+{%block content2%}
+<div class="content-section ">
+    <form method="POST" action="">
+      {{form.hidden_tag()}}
+      <div class="form-group">
+
+      {{form.email.label(class="form-control-label")}}
+      {%if form.email.errors%}
+      {{form.email(class="form-control form-control-lg")}}
+      <div class="invalid-feedback">
+        {%for errors in form.email.errors%}
+        <span>{{errors}}</span>
+        {%endfor%}
+      </div>
+      {%else%}
+      {{form.email(class="form-control form-control-lg")}}
+      {%endif%}
+
+    </div>
+    <div class="form-group">
+      {{form.subscribe(class="btn btn-md btn-danger")}}
+    </div>
+  </form>
+</div>
+{%endblock content2%}

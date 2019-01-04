@@ -1,0 +1,44 @@
+{%extends "home.html"%}
+{% block content %}
+  <article class="media content-section">
+    <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pic/' + post.author.image_file) }}">
+    <div class="media-body">
+      <div class="article-metadata">
+        <a class="mr-2" href="{{ url_for('users.user_posts', username=post.author.username) }}">{{ post.author.username }}</a>
+        <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
+      </div>
+      <h2 class="article-title">{{ post.title }}</h2>
+      <p class="article-content">{{ post.content }}</p>
+
+      <p class="text-muted mb-0">Comments</p>
+
+            <div class="border-top pt-2">
+              {%for comment in comments.filter_by(post_id=post.id).limit(8)%}
+
+              <p class="text-muted"><img class="rounded-circle profile-img mr-2" src="{{ url_for('static',filename='profile_pic/'+comment.comment_author.image_file )}}"> <span class="text-primary mr-2"><u>{{comment.comment_author.username}}</u></span><i>{{comment.content}}</i></p>
+              {%endfor%}
+            </div>
+
+      <form method="POST" action="" class="border-top ">
+              {{form1.hidden_tag()}}
+              <div class="form-group mt-2">
+                {%if form1.comment.errors%}
+                {{form1.comment(class="form-control form-control-md is-invalid")}}
+                <div class="invalid-feedback">
+                  {%for errors in form1.comment.errors%}
+                  <span>{{errors}}</span>
+                  {%endfor%}
+                </div>
+                {%else%}
+                {{form1.comment(class="form-control form-control-md",placeholder="Comment")}}
+                {%endif%}
+
+              </div>
+              <div class="form-group">
+                {{form1.submit(class="btn btn-md btn-danger")}}
+              </div>
+            </form>
+
+    </div>
+  </article>
+{%endblock content%}

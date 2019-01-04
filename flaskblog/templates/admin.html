@@ -1,0 +1,32 @@
+{% extends "layout.html"%}
+{% block content1 %}
+<div class="container-fluid mt-0">
+    <!-- <h2 class="border_bottom">Online users {{ count }}</h2> -->
+    <div class="row">
+        <div class="col-md-2 col-sm-12  p-0" style="position:sticky;!important">
+            <div class=" bg-steel" style="position:fixed;" >
+            <a class="nav-item nav-link btn-secondary text-light white ml-0 pt-2 pb-2 mr-0 pl-3 pr-2 border-right  d-flex justify-content-between align-items-center" href="{{url_for('users.users_table')}}">Users
+              {%if users_count %}
+              <span class="badge badge-primary badge-pill ml-4">{{users_count}}</span>
+              {%endif%}
+            </a>
+            <a class="nav-item nav-link btn-secondary text-light white ml-0 pt-2 pb-2 mr-0 pl-3 pr-2 border-right  d-flex justify-content-between align-items-center" href="{{url_for('users.subscribers')}}">Subscribers
+              {%if subscribers_count %}
+              <span class="badge badge-primary badge-pill ml-4">{{subscribers_count}}</span>
+              {%endif%}
+            <a class="nav-item nav-link btn-secondary text-light white ml-0 pt-2 pb-2 mr-0 pl-3 pr-2 border-right  d-flex justify-content-between align-items-center" href="{{url_for('posts.posts_table')}}">Posts
+              {%if posts_count %}
+              <span class="badge badge-primary badge-pill ml-4">{{posts_count}}</span>
+              {%endif%}
+            <a class="nav-item nav-link btn-secondary text-light white ml-0 pt-2 pb-2 mr-0 pl-3 pr-5 border-right" href="{{url_for('posts.admin_comments')}}">Comments</a>
+            <a class="nav-item nav-link btn-secondary text-light white ml-0 pt-2 pb-2 mr-0 pl-3 pr-5 border-right" href="#">Login</a>
+            <a class="nav-item nav-link btn-secondary text-light white ml-0 pt-2 pb-2 mr-0 pl-3 pr-5 border-right" href="#">Register</a>
+          </div>
+      </div>
+  <div class="col-md-10">
+    {%block users%}{%endblock users%}
+  </div>
+</div>
+
+
+{% endblock %}

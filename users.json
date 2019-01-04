@@ -1,0 +1,112 @@
+[
+  {
+    "is_auth": 1,
+    "id": 1,
+    "username": "Allan Sifuna",
+    "email": "allansifuna324@gmail.com",
+    "active": "Offline",
+    "pic": "83f62bc86dd33628.jpg",
+    "role": "Adminstrator",
+    "password": "$2b$12$9VppdAszDbgho0pWS6VI1.3SxDK8mqP20OLylv5OmgDKAOi6AE4/O"
+  },
+  {
+    "is_auth": 1,
+    "id": 2,
+    "username": "Rootuser",
+    "email": "namasakaallan18@students.ku.ac.ke",
+    "active": "Active",
+    "pic": "e085e6928e6aad7d.jpg",
+    "role": "User",
+    "password": "$2b$12$QBOXvZwpkHspSaiLQCGLCOLT5l1btScThXMAH2xm3SzsQQQ0vyUj6"
+  },
+  {
+    "is_auth": 1,
+    "id": 3,
+    "username": "Adminuser",
+    "email": "noreply.sifuna@gmail.com",
+    "active": "Offline",
+    "pic": "1930bb58f10fb8e8.jpg",
+    "role": "User",
+    "password": "$2b$12$Rp4GIVtYsahPtRFX2UOj/.Zhv63JDW3Vf.d0LeBMj.iI.Xo8VVotC"
+  },
+  {
+    "is_auth": 1,
+    "id": 4,
+    "username": "Frank Wafula",
+    "email": "frankwafula@gmail.com",
+    "active": "Offline",
+    "pic": "b594874b0858431f.jpg",
+    "role": "User",
+    "password": "$2b$12$bBmSs8/D.7dE7XHSjt9IVOmX.SggNyiBi8LdIuEtqBAbUUPg66n22"
+  },
+  {
+    "is_auth": 1,
+    "id": 5,
+    "username": "Monica Nangila",
+    "email": "monicanangila@gmail.com",
+    "active": "Offline",
+    "pic": "269ec416e47be31a.jpg",
+    "role": "User",
+    "password": "$2b$12$J0gdAjPWNm0TXvFDsf4dDuy8XPqZL7tQdQxfy5GZXlm2LLY/afOdi"
+  },
+  {
+    "is_auth": 1,
+    "id": 6,
+    "username": "Robert Namasaka",
+    "email": "robertnamasaka12@gmail.com",
+    "active": "Offline",
+    "pic": "09712437fcc89b7a.jpg",
+    "role": "User",
+    "password": "$2b$12$xnO985MWuhKBRhCHSsfvw.0cQkHRnZLBKAbsCqZykV9Ah8M14YZ92"
+  },
+  {
+    "is_auth": 1,
+    "id": 7,
+    "username": "Cornelius Kundu",
+    "email": "corrybonny@gmail.com",
+    "active": "Offline",
+    "pic": "default_image.jpg",
+    "role": "User",
+    "password": "$2b$12$WUyEsKUnwjuOWcibjoQkpuqxHVJDXau7Dm6J/LT/xowUu.62ENViq"
+  },
+  {
+    "is_auth": 1,
+    "id": 8,
+    "username": "Christine Nalyaka",
+    "email": "christinenalyaka@gmail.com",
+    "active": "Offline",
+    "pic": "default_image.jpg",
+    "role": "User",
+    "password": "$2b$12$WfLUIglD9SeJaLtG6iYht.kGaGbIYp879tpMb30DTJmFEPprTF9Ju"
+  },
+  {
+    "is_auth": 1,
+    "id": 9,
+    "username": "Hilda Nasimiyu",
+    "email": "hildanasy@gmail.com",
+    "active": "Offline",
+    "pic": "5a2113e113e93fcd.jpg",
+    "role": "User",
+    "password": "$2b$12$9ArFuXN7W5IcCBFGGaVcIePusOQRa.ba6z7/4qa43mEcfeN1dfNqS"
+  },
+  {
+    "is_auth": 1,
+    "id": 10,
+    "username": "Anonymous",
+    "email": "anonymous.email@email.com",
+    "active": "Offline",
+    "pic": "default_image.jpg",
+    "role": "User",
+    "password": "$2b$12$PASzytP1NJJnqOcAhj/0nOfhXcT0VBrMQoVWHmMhwhpFv.qwsQ/NS"
+  },
+  {
+    "is_auth": 0,
+    "id": 11,
+    "username": "Faith Sifuna",
+    "email": "faithsifuna@gmail.com",
+    "active": "Offline",
+    "pic": "default_image.jpg",
+    "role": "User",
+    "password": "$2b$12$gwXbXMX2AJi8gY/ch3m7iO4O7/HPCMCNlbqR9iK7ePe16FZkd9XFS"
+  }
+]
